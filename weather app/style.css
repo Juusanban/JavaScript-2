@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: orange;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 450px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    width: 230px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 18px;
+    margin-left: 5px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+#message {
+    min-height: 25px;
+    color: red;
+}
+
+.weather-card {
+    padding: 25px;
+    border: 1px solid orange;
+    border-radius: 12px;
+    background-color: #151515;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.weather-icon {
+    font-size: 70px;
+}
+
+#cityName {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+#weatherText {
+    font-size: 20px;
+}
+
+.temperature {
+    margin: 20px 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.details {
+    font-size: 16px;
+}
+
+.sunny {
+    background-color: #503800;
+}
+
+.cloudy {
+    background-color: #30343b;
+}
+
+.rainy {
+    background-color: #162d42;
+}
+
+.snowy {
+    background-color: #284858;
+}
+
+.stormy {
+    background-color: #291b35;
+}

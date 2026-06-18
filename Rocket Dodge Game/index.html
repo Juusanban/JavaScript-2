@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Rocket Dodge Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>ロケット回避ゲーム</h1>
+
+<div class="info">
+  <span id="scoreText">Score: 0</span>
+  <span id="hitText">Hits: 0 / 10</span>
+  <button id="startBtn">Start</button>
+  <button id="restartBtn">Restart</button>
+</div>
+
+<canvas id="field" width="600" height="600"></canvas>
+
+<img id="rocketImg" src="rocket.png" style="display: none;">
+
+<p class="guide">矢印キーでロケットを動かします。</p>
+
+<script src="game.js"></script>
+</body>
+</html>

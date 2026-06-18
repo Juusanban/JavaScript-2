@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Shooting Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>シンプルシューティングゲーム</h1>
+
+<div class="info">
+  <span id="scoreText">Score: 0</span>
+  <button id="restartBtn">Restart</button>
+</div>
+
+<canvas id="field" width="600" height="600"></canvas>
+
+<img id="ship" src="space08.png" style="display: none;">
+<img id="enemy" src="space_kaseijin.png" style="display: none;">
+
+<script src="utils.js"></script>
+<script src="bullet.js"></script>
+<script src="ship.js"></script>
+<script src="enemy.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

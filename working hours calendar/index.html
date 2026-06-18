@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>28時間チェックカレンダー</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: orange;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 560px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid orange;
+      border-radius: 8px;
+      background-color: black;
+    }
+
+    h1 {
+      text-align: center;
+      color: orange;
+    }
+
+    .controls {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #dateInput {
+      width: 160px;
+      padding: 8px;
+      background-color: black;
+      color: white;
+      border: 1px solid orange;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-left: 5px;
+      background-color: orange;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #message {
+      color: red;
+      text-align: center;
+      min-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    #monthTitle {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    #totalHours {
+      text-align: center;
+      color: limegreen;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th, td {
+      border: 1px solid orange;
+      text-align: center;
+      height: 70px;
+    }
+
+    th {
+      height: 35px;
+      color: orange;
+    }
+
+    .sun {
+      color: red;
+    }
+
+    .sat {
+      color: deepskyblue;
+    }
+
+    .today {
+      outline: 2px solid orange;
+      font-weight: bold;
+    }
+
+    .empty {
+      background-color: black;
+    }
+
+    .hour-input {
+      width: 40px;
+      margin-top: 5px;
+      padding: 3px;
+      background-color: black;
+      color: white;
+      border: 1px solid gray;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .over {
+      background-color: #330000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>28時間チェックカレンダー</h1>
+
+  <div class="controls">
+    <button onclick="prevMonth()">前</button>
+    <input type="text" id="dateInput" placeholder="YYYYMM 例: 202605">
+    <button onclick="generateCalendar()">表示</button>
+    <button onclick="nextMonth()">次</button>
+  </div>
+
+  <div id="message"></div>
+  <div id="monthTitle"></div>
+  <div id="totalHours"></div>
+  <div id="calendar"></div>
+</div>
+
+<script src="caLog.js"></script>
+</body>
+</html>
