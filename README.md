@@ -1,4 +1,4 @@
-# JavaScript Portfolio Projects
+# JavaScript 2
 
 JavaScriptを使用して作成した作品をまとめたリポジトリです。
 
