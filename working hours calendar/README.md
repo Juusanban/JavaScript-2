@@ -35,12 +35,11 @@
 
 ## File Structure
 
-```text
 work-hours-calendar/
  index.html
  caLog.js
  README.md
-```
+
 
 ## Notes
 
